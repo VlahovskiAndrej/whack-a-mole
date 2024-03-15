@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Whack a mole</title>
+</head>
+
+<body>
+
+    <div id="div-text">
+        <h1 id="title">Whack a mole</h1>
+
+        <div id="number-of-moles">
+            <label for="number-of-moles-input">Number of moles:</label>
+            <input type="number" id="number-of-moles-input" value="5">
+        </div>
+        
+        <div id="difficulty-options">
+            <input class="difficulty-button-input" type="radio" id="easy" name="difficulty" value="easy">
+            <label for="easy" class="difficulty-button">Easy</label>
+        
+            <input class="difficulty-button-input" type="radio" id="medium" name="difficulty" value="medium" checked>
+            <label for="medium" class="difficulty-button">Medium</label>
+        
+            <input class="difficulty-button-input" type="radio" id="hard" name="difficulty" value="hard">
+            <label for="hard" class="difficulty-button">Hard</label>
+        </div>
+    
+        <p id="text">Points: <span id="points">0</span></p>
+        <p id="highest-score">Highest score: <span id="max-points">0</span> <span id="difficulty-text"></span> </p>
+        <div class="container-btn">
+            <button id="start-button">Start Game</button>
+        </div>
+    
+    </div>
+    
+    <div id="div-game">
+
+        <table>
+            <p id="timer-text">Moles left: <span id="timer">0</span></p>
+            <tr>
+                <td id="cell1"></td>
+                <td id="cell2"></td>
+                <td id="cell3"></td>
+            </tr>
+    
+            <tr>
+                <td id="cell4"></td>
+                <td id="cell5"></td>
+                <td id="cell6"></td>
+            </tr>
+    
+            <tr>
+                <td id="cell7"></td>
+                <td id="cell8"></td>
+                <td id="cell9"></td>
+            </tr>
+        </table>
+    </div>
+ 
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

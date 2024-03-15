@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
+
+body{
+    background-image: url("/images/grass-2.jpg");
+    background-color: #499200;
+    font-family: 'Galindo';
+}
+
+#div-game, #div-text{
+    float: left;
+    width: 50%; /* Adjust the width as needed */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 10px; /* Optional: Add padding for better visualization */
+}
+
+table{
+    margin: auto;
+    border-spacing: 20px;    
+}
+
+td{
+    border: 20px solid rgb(126, 43, 43);
+    /* border-image: url('grass-2.jpg'); */
+    padding: 70px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+#title{
+    text-align: center;
+    font-size: 70px;
+    color: whitesmoke;
+}
+
+#text{
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    margin-bottom: 0;
+}
+
+#highest-score{
+    text-align: center;
+    font-size: 23px;
+    color: whitesmoke;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-button{
+    font-family: 'Galindo';
+    padding: 15px 30px;
+    font-size: 25px;
+    background-color: rgb(0, 86, 0);
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+}
+
+#start-button:hover{
+    background-color: rgb(1, 68, 1);
+    cursor: pointer;
+}
+
+img {
+    max-width: 130px;
+    max-height: 130px;
+    display: block; 
+    margin: auto; 
+  }
+
+img:hover{
+    cursor: pointer; 
+}
+
+#points{
+    font-size: 40px;
+}
+
+#timer-text{
+    margin-top: 0;
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    margin-bottom: 0;
+}
+
+#difficulty-options {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.difficulty-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(126, 43, 43);
+    color: #fff;
+    font-family: 'Galindo', sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.difficulty-button:hover {
+    background-color: rgb(67, 35, 35);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: rgb(67, 35, 35);
+}
+
+
+#number-of-moles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#number-of-moles label {
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+#number-of-moles input {
+    font-family: 'Galindo';
+    font-size: 20px;
+    opacity: 0.8;
+    width: 7%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#number-of-moles input[type="number"]:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 1);
+}
