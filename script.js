@@ -1,9 +1,12 @@
+// Ovaa skripta ne se koristi vishe... 
+
 const startButton = document.getElementById('start-button');
 const pointsText = document.getElementById('points');
 const maxPointsText = document.getElementById('max-points');
 const difficultyText = document.getElementById('difficulty-text');
 const timerText = document.getElementById('timer');
 const numOfMolesInput = document.getElementById('number-of-moles-input');
+const difficultyRadios = document.querySelectorAll('input[name="difficulty"]');
 const image = createMoleImage();
 
 let numberOfMoles = numOfMolesInput.value;
@@ -12,12 +15,10 @@ let points = 0;
 let baseTimeoutDuration = 700;
 let timeoutDuration = baseTimeoutDuration;
 let timeouts = [];
+let selectedDifficulty = 'medium';
 
 startButton.addEventListener('click', toggleGame);
 image.addEventListener('click', hitMole);
-
-const difficultyRadios = document.querySelectorAll('input[name="difficulty"]');
-let selectedDifficulty = 'medium';
 
 difficultyRadios.forEach(radio => {
     radio.addEventListener('change', function() {
